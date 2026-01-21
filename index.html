@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovación Solar para Vaca Muerta | IntiWatt Piloto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'oil-black': '#0f172a',
+                        'solar-yellow': '#fbbf24',
+                        'tech-cyan': '#22d3ee',
+                        'alert-red': '#f87171',
+                        'card-bg': '#1e293b',
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .solar-image {
+            width: 100%;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+            margin: 1.5rem 0;
+            image-rendering: auto;
+            -webkit-image-rendering: auto;
+            -moz-image-rendering: auto;
+            -o-image-rendering: auto;
+        }
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155; 
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #fbbf24; 
+        }
+    </style>
+</head>
+<body class="bg-oil-black text-gray-200 font-sans leading-relaxed">
+
+    <!-- HERO SECTION -->
+    <header class="min-h-[70vh] flex flex-col justify-center items-center text-center px-4 bg-gradient-to-b from-slate-900 to-oil-black relative overflow-hidden border-b border-gray-800">
+        <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-solar-yellow via-tech-cyan to-solar-yellow"></div>
+        
+        <div class="z-10 max-w-4xl">
+            <div class="mb-4 inline-block px-4 py-1 rounded-full border border-solar-yellow text-solar-yellow text-sm font-bold tracking-wider uppercase">
+                Análisis de Viabilidad de Mercado 2026
+            </div>
+            <h1 class="text-4xl md:text-6xl font-black mb-6 text-white tracking-tight">
+                INTIWATT <span class="text-solar-yellow">PILOTO</span>
+            </h1>
+            <h2 class="text-xl md:text-2xl font-light text-gray-400 mb-8">
+                Unidad de Prueba para <span class="text-tech-cyan font-bold">Vaca Muerta</span>
+            </h2>
+            <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-10">
+                Desarrollo de una unidad móvil piloto de 6kW diseñada para la validación técnica y comercial en entornos de Oil & Gas.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <div class="flex items-center space-x-2 bg-card-bg px-4 py-2 rounded shadow-lg border-l-4 border-solar-yellow">
+                    <span>⚡</span>
+                    <span class="font-bold">6kW Potencia</span>
+                </div>
+                <div class="flex items-center space-x-2 bg-card-bg px-4 py-2 rounded shadow-lg border-l-4 border-tech-cyan">
+                    <span>🔋</span>
+                    <span class="font-bold">Litio LFP</span>
+                </div>
+                <div class="flex items-center space-x-2 bg-card-bg px-4 py-2 rounded shadow-lg border-l-4 border-alert-red">
+                    <span>🛡️</span>
+                    <span class="font-bold">IP65 Rugged</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 1: THE CONTEXT -->
+    <section class="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+        <div class="mb-8">
+            <h3 class="text-2xl font-bold text-white mb-4 border-l-8 border-alert-red pl-4">1. El Desafío Añelo: Factores Críticos del Piloto</h3>
+            <p class="text-gray-400">
+                La unidad piloto debe demostrar resiliencia donde los competidores estándar fallan. No se trata solo de generar energía, sino de garantizar continuidad en el desierto.
+            </p>
+        </div>
+
+        <div class="solar-image">
+            <img src="https://i.postimg.cc/NF5pDJ5J/istockphoto-1330115133-2048x2048.jpg" 
+     alt="Sistema solar móvil en campo agrícola" 
+     class="max-w-md h-auto rounded-lg mx-auto">
+
+
+            <p class="text-center text-xs text-gray-500 mt-2">Sistema solar móvil en campo agrícola - ejemplo de aplicación en entorno rural</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center mt-10">
+            <div class="bg-card-bg p-5 rounded-xl shadow-lg border border-gray-700">
+                <h4 class="text-lg font-bold text-solar-yellow mb-3">Puntos de Validación del Piloto</h4>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <span class="mr-2 text-alert-red">⚠️</span>
+                        <div>
+                            <strong class="text-white block">Resistencia Mecánica</strong>
+                            <span class="text-sm">El tráiler piloto debe soportar el "serrucho" de los caminos de ripio sin que se suelten conexiones eléctricas.</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-2 text-alert-red">🌡️</span>
+                        <div>
+                            <strong class="text-white block">Gestión Térmica Activa</strong>
+                            <span class="text-sm">Validar que el BMS de litio opere correctamente en el invierno de Añelo (-10°C) mediante calefacción del gabinete.</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-2 text-alert-red">🌫️</span>
+                        <div>
+                            <strong class="text-white block">Estanqueidad IP65</strong>
+                            <span class="text-sm">Comprobar que el inversor y las baterías permanezcan libres de polvo de caliche tras un mes de exposición.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-card-bg p-5 rounded-xl shadow-lg border border-gray-700">
+                <h4 class="text-center text-gray-300 mb-4 text-sm font-bold uppercase tracking-widest">Restricciones Ambientales Reales</h4>
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <h5 class="text-white font-bold">Condiciones Extremas en Vaca Muerta</h5>
+                    <ul class="mt-3 space-y-2 text-gray-300 text-sm">
+                        <li>• Temperatura máxima: 42°C en verano</li>
+                        <li>• Temperatura mínima: -10°C en invierno</li>
+                        <li>• Velocidad máxima de viento: 120 km/h</li>
+                        <li>• Polvo de caliche constante</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: GLOBAL BENCHMARKS -->
+    <section class="py-12 px-4 bg-gray-900 border-y border-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-10 text-center">
+                <h3 class="text-2xl font-bold text-white mb-2">2. Referencias para el Desarrollo del Piloto</h3>
+                <p class="text-tech-cyan">Innovaciones mundiales aplicables a la unidad de prueba</p>
+            </div>
+
+            <div class="solar-image">
+                <img src="https://i.postimg.cc/MHvd5Pv9/istockphoto-1398966867-2048x2048.jpg" 
+     alt="Sistema solar móvil con camión" 
+     class="w-full h-auto rounded-lg">
+
+                <p class="text-center text-xs text-gray-500 mt-2">Sistema solar móvil con camión - ejemplo de movilidad y transporte</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10">
+                <div class="bg-card-bg p-5 rounded-xl border-t-4 border-solar-yellow">
+                    <div class="flex justify-between items-center mb-3">
+                        <h4 class="text-lg font-bold text-white">Australia (Modular)</h4>
+                        <span class="text-xl">🇦🇺</span>
+                    </div>
+                    <ul class="text-sm space-y-1 text-gray-300">
+                        <li>📡 <strong>Internet Satelital:</strong> Capacidad para telemetría remota del piloto.</li>
+                        <li>👁️ <strong>CCTV IoT:</strong> Valor agregado para seguridad en locación.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-card-bg p-5 rounded-xl border-t-4 border-tech-cyan">
+                    <div class="flex justify-between items-center mb-3">
+                        <h4 class="text-lg font-bold text-white">Permian Basin (USA)</h4>
+                        <span class="text-xl">🇺🇸</span>
+                    </div>
+                    <ul class="text-sm space-y-1 text-gray-300">
+                        <li>🔋 <strong>Capacidad de Reserva:</strong> Baterías dimensionadas para 48h de autonomía.</li>
+                        <li>🏗️ <strong>Paneles Bifaciales:</strong> Maximización de espacio en el tráiler.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-card-bg p-5 rounded-xl border-t-4 border-alert-red">
+                    <div class="flex justify-between items-center mb-3">
+                        <h4 class="text-lg font-bold text-white">Omán (Desierto)</h4>
+                        <span class="text-xl">🇴🇲</span>
+                    </div>
+                    <ul class="text-sm space-y-1 text-gray-300">
+                        <li>🌬️ <strong>Filtrado de Polvo:</strong> Sistemas de presurización en el gabinete piloto.</li>
+                        <li>🔌 <strong>Fichas Industriales:</strong> Conexión rápida para movilidad total.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: TECHNICAL INNOVATION -->
+    <section class="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+                <div class="solar-image">
+                    <img src="https://i.postimg.cc/GtHqK7HS/istockphoto-1576505433-2048x2048.jpg" alt="Sistema solar vertical" class="w-full h-auto rounded-lg">
+                    <p class="text-center text-xs text-gray-500 mt-2">Sistema solar vertical - demostración de diseño innovador para entornos polvorientos</p>
+                </div>
+                <div class="bg-card-bg p-5 rounded-xl shadow-lg border border-gray-700 mt-6">
+                    <h4 class="text-center text-gray-300 mb-3 text-sm font-bold uppercase tracking-widest">Ventaja de Paneles Verticales</h4>
+                    <div class="bg-gray-800 p-3 rounded-lg">
+                        <h5 class="text-solar-yellow font-bold text-sm">Autolimpieza por Gravedad</h5>
+                        <p class="text-xs text-gray-400">El ángulo vertical elimina la necesidad de limpieza manual constante, reduciendo costos operativos.</p>
+                    </div>
+                    <div class="bg-gray-800 p-3 rounded-lg mt-3">
+                        <h5 class="text-tech-cyan font-bold text-sm">Doble Pico de Generación</h5>
+                        <p class="text-xs text-gray-400">Aprovechamiento de la radiación directa y reflejada por el suelo del desierto.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center">
+                <h3 class="text-2xl font-bold text-white mb-4 border-l-8 border-tech-cyan pl-4">3. Innovación en la Unidad Piloto</h3>
+                <p class="text-gray-300 mb-4">
+                    El piloto servirá para validar la hipótesis de los <strong>paneles verticales bifaciales</strong> en Añelo.
+                </p>
+                <div class="space-y-3">
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                        <h5 class="text-solar-yellow font-bold">Reducción de 50% en Mantenimiento</h5>
+                        <p class="text-sm text-gray-400">La disposición vertical elimina la acumulación de polvo que requiere limpieza frecuente en sistemas tradicionales.</p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                        <h5 class="text-tech-cyan font-bold">Optimización de Espacio en Tráiler</h5>
+                        <p class="text-sm text-gray-400">Mayor capacidad de generación por m² de superficie del tráiler, maximizando la potencia en el espacio limitado.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: RENTAL STRATEGY -->
+    <section class="py-12 px-4 bg-gradient-to-t from-gray-900 to-oil-black">
+        <div class="max-w-6xl mx-auto text-center mb-8">
+            <h3 class="text-2xl font-bold text-white">4. Estrategia de Comercialización del Piloto</h3>
+            <p class="text-gray-400 mt-2">El objetivo es el alquiler (OPEX) para empresas de servicios petroleros.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto items-center">
+            <div class="solar-image">
+                <img src="https://i.postimg.cc/D08B6j8g/istockphoto-179500470-2048x2048.jpg" alt="Sistema solar modular" class="w-full h-auto rounded-lg">
+                <p class="text-center text-xs text-gray-500 mt-2">Sistema solar modular - ejemplo de configuración para múltiples unidades</p>
+            </div>
+
+            <div class="space-y-4">
+                <p class="text-gray-300">
+                    El piloto demostrará que el alquiler mensual es más rentable que la compra de un generador diésel cuando se suman combustible y mantenimiento.
+                </p>
+                
+                <div class="grid grid-cols-1 gap-3">
+                    <div class="flex items-center p-3 bg-gray-800 rounded border border-gray-700">
+                        <div class="h-8 w-8 rounded-full bg-tech-cyan flex items-center justify-center text-black font-bold mr-3 text-sm">IoT</div>
+                        <div>
+                            <h5 class="font-bold text-white text-sm">Supervisión Remota</h5>
+                            <p class="text-xs text-gray-400">Monitoreo de carga y estado de baterías en tiempo real desde Neuquén.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-3 bg-gray-800 rounded border border-gray-700">
+                        <div class="h-8 w-8 rounded-full bg-solar-yellow flex items-center justify-center text-black font-bold mr-3 text-sm">HSE</div>
+                        <div>
+                            <h5 class="font-bold text-white text-sm">Certificación de Seguridad</h5>
+                            <p class="text-xs text-gray-400">El piloto incluirá toda la documentación de seguridad requerida por operadoras.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: ROI -->
+    <section class="py-12 px-4 md:px-8 max-w-7xl mx-auto border-t border-gray-800">
+        <div class="text-center mb-8">
+            <h3 class="text-2xl font-bold text-white mb-2">5. Análisis del Modelo Piloto (12 Meses)</h3>
+            <p class="text-gray-400">Comparativa de Costo Acumulado para el Cliente Final</p>
+        </div>
+
+        <div class="solar-image">
+            <img src="https://i.postimg.cc/HxS6QDsz/istockphoto-93428744-2048x2048.jpg" 
+     alt="Sistemas solares en formación" 
+     class="w-full h-auto rounded-lg">
+
+            <p class="text-center text-xs text-gray-500 mt-2">Sistemas solares en formación - demostración de capacidad de escalabilidad</p>
+        </div>
+
+        <div class="bg-card-bg p-5 rounded-xl shadow-lg border border-gray-700 mb-8">
+            <div class="bg-gray-800 p-5 rounded-lg">
+                <h4 class="text-lg font-bold text-white mb-3 text-center">Comparativa de Costos (12 Meses)</h4>
+                <ul class="space-y-2">
+                    <li class="flex justify-between py-2 border-b border-gray-700">
+                        <span class="text-gray-300">Generador Diésel (10kW)</span>
+                        <span class="font-bold text-alert-red">$33,600</span>
+                    </li>
+                    <li class="flex justify-between py-2 border-b border-gray-700">
+                        <span class="text-gray-300">Unidad Piloto Solar (6kW)</span>
+                        <span class="font-bold text-solar-yellow">$26,400</span>
+                    </li>
+                    <li class="flex justify-between pt-2">
+                        <span class="font-bold text-white">Ahorro Neto</span>
+                        <span class="font-bold text-green-400">$7,200</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-solar-yellow to-yellow-600 p-6 rounded-2xl shadow-xl text-center flex flex-col items-center text-black">
+            <h4 class="text-xl font-black mb-1 uppercase">Conclusión: Validar para Escalar</h4>
+            <p class="font-medium text-center">
+                La unidad piloto es el activo que cerrará los contratos de alquiler al demostrar ahorro real y cero fallas en campo.
+            </p>
+            <div class="bg-black/20 p-3 rounded-lg backdrop-blur-sm mt-4 w-full max-w-md">
+                <div class="font-bold text-sm uppercase mb-0.5">Estatus del Proyecto</div>
+                <div class="text-white font-black text-lg">Fase de Diseño Piloto</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-6 text-center text-gray-600 text-sm">
+        <p>IntiWatt | Generación Fotovoltaica Industrial</p>
+        <p>&copy; 2026 Neuquén - Argentina</p>
+    </footer>
+</body>
+</html>
